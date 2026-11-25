@@ -103,7 +103,7 @@ class WeatherCalendar:
 
     def sort_by_day(self):
         """Сортує записи за днем."""
-        self.__records.sort(key=lambda record: record.get_day())
+        self.__records.sort(key=Weather.get_day)
 
     def print_records(self):
         """Виводить усі записи."""
